@@ -270,6 +270,7 @@ a {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  padding: 0 0 2rem 0;
 }
 .card__header,
 .card__body {
@@ -284,11 +285,17 @@ a {
   color: #fff;
 }
 /* plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
 .plan__name {
   color: #fff;
   margin: 0;
   font-weight: 500;
   font-size: 2.4rem;
+}
+.plan:hover {
+  transform: scale(1.05);
 }
 .plan__price {
   font-size: 6rem;
@@ -310,6 +317,12 @@ a {
 }
 .plan .list__item {
   margin-bottom: 2rem;
+}
+.plan--popular {
+  transform: scale(1.1);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 .plan--popular .card__header {
   position: relative;
@@ -606,4 +619,13 @@ a {
     margin: 0 auto;
     max-width: 700px;
   }
+}
+/* plan block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+  /* justify-content: center; */
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
