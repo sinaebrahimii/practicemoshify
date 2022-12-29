@@ -256,9 +256,11 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
+  padding: 2rem 3vw;
 }
 @media screen and (min-width: 1024px) {
   .input {
@@ -422,6 +424,7 @@ a {
 /* Testimonial */
 .testimonial {
   padding: 3rem;
+  margin-top: 10rem;
 }
 .testimonial__image {
   position: relative;
@@ -632,7 +635,7 @@ a {
 }
 /* Features */
 .feature {
-  margin: 12rem 0;
+  margin: 5rem 0;
   gap: 4rem 3rem;
 }
 .feature:first-of-type {
@@ -674,5 +677,38 @@ a {
   .block-showcase__image > img {
     width: auto;
     max-width: 700px;
+  }
+}
+/* footer block */
+.footer-block {
+  background: #232323;
+  margin-top: 10rem;
+}
+.footer-block .grid {
+  padding: 5rem 3rem;
+}
+.footer-block .collapsible {
+  margin-bottom: 4rem;
+}
+.footer-block .collapsible__heading {
+  color: #fff;
+}
+.footer-block .collapsible__content li {
+  color: rgb(177, 177, 177);
+}
+.footer__image {
+  text-align: center;
+}
+.footer__section {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #393939;
+}
+@media screen and (min-width: 768px) {
+  .footer-block .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+  .footer__section {
+    border: 0;
   }
 }
