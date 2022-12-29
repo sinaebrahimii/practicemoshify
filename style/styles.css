@@ -629,3 +629,26 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+/* Features */
+.feature {
+  margin: 12rem 0;
+  gap: 4rem 3rem;
+}
+.feature:first-of-type {
+  margin: 6rem 0;
+}
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature__image {
+  align-self: center;
+}
+.feature__image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
